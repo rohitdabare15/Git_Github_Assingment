@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do Form</title>
+    <style>
+        body { font-family: Arial; background: #f4f4f4; }
+        form {
+            width: 300px;
+            margin: 100px auto;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+        }
+        input, textarea, button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 8px;
+        }
+        button {
+            background: gray;
+            color: red;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<form method="POST" action="/submittodoitem">
+    <input type="text" name="itemName" placeholder="Item Name" required>
+    <textarea name="itemDescription" placeholder="Item Description" required></textarea>
+    <input type="number" name="itemID" placeholder="Item ID" required>
+    <input type="number" name="itemUUID" placeholder="Item UUID" required>
+    <input type="number" name="itemHash" placeholder="Item Hash" required>
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
