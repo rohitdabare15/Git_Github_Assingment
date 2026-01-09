@@ -8,5 +8,11 @@
     "id": 2,
     "name": "Amit",
     "role": "Software Engineer"
+  },
+  {
+    "id": 3,
+    "name": "Rajan",
+    "role": "DevOps Engineer"
   }
+
 ]

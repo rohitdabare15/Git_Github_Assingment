@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/api", methods=["GET"])
 def get_data():
     # Read data from backend file
-    with open("test_1_flask.json", "r") as file:
+    with open("flask.json", "r") as file:
         data = json.load(file)
 
     # Return JSON response
